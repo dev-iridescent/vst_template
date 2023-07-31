@@ -7,10 +7,6 @@ project (ProjectName
 
 add_definitions(-D_DEBUG -DDEVELOPMENT)
 
-set(dsputils_SOURCE_DIR ../../dsputils)
-include_directories(${dsputils_SOURCE_DIR}/include)
-add_subdirectory(${dsputils_SOURCE_DIR} dsputils)
-
 set(vst3sdk_SOURCE_DIR ../../vst3sdk)
 add_subdirectory(${vst3sdk_SOURCE_DIR} ${PROJECT_BINARY_DIR}/vst3sdk)
 smtg_enable_vst3_sdk()
